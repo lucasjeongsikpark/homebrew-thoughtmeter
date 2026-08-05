@@ -7,7 +7,9 @@ cask "thoughtmeter" do
   desc "Local-first menu bar app that counts keystrokes inside the AI tools you choose"
   homepage "https://github.com/lucasjeongsikpark/thoughtmeter"
 
-  depends_on macos: ">= :sonoma"
+  # Symbol form, not ">= :sonoma": Homebrew 6 deprecated the string comparison.
+  # Both report "macOS >= 14" — verified with brew info, not assumed.
+  depends_on macos: :sonoma
   depends_on arch: :arm64
 
   app "ThoughtMeter.app"

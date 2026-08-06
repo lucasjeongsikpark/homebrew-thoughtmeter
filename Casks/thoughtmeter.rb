@@ -1,6 +1,6 @@
 cask "thoughtmeter" do
-  version "0.1.2"
-  sha256 "7475674c15cd8df41f679d6278e010d0eba76a494dabd0d630f9cc966bc8eb2a"
+  version "0.1.3"
+  sha256 "23d9c397d18600bfde543be69c1a6cbda03ec660d2cfd09a71fafd9fd1204e7e"
 
   url "https://github.com/lucasjeongsikpark/thoughtmeter/releases/download/v#{version}/ThoughtMeter-#{version}.dmg"
   name "ThoughtMeter"
